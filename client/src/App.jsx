@@ -4,14 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
   const [array, setArray] = useState([])
 
   const fetchAPI = async () => {
-    const response = await axios.get('https://legendary-space-waffle-56p64qg5j9737g57-8080.app.github.dev/api')
-    setArray(response.data.fruits)
-    console.log(response.data.fruits)
+    const response = await axios.get('http://localhost:8080/api')
+    if (response.data && response.data.fruits) {
+      setArray(response.data.fruits)
+      console.log(response.data.fruits)
+    }
   }
 
   useEffect(() => {
@@ -51,5 +53,3 @@ function App() {
     </>
   )
 }
-
-export default App

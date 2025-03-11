@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const corsOptions = {
-    origin: 'https://legendary-space-waffle-56p64qg5j9737g57-5173.app.github.dev/',
-    optionsSuccessStatus: 200
+    origin: ['http://localhost:5173']
 };
 
 app.use(cors(corsOptions));
