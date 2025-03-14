@@ -5,7 +5,7 @@ import './App.css'
 import axios from 'axios'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   const [array, setArray] = useState([])
 
   const fetchAPI = async () => {
@@ -22,7 +22,18 @@ export default function App() {
 
   return (
     <>
-      <div>
+      <div className="container">
+        <h1>I'm working!</h1>  
+        {
+          array.map((fruit, index) => (
+            <div key={index}>
+              <p>{fruit}</p>
+              <br></br>
+            </div>
+          ))
+        }
+      </div>
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -38,18 +49,10 @@ export default function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
-        {
-          array.map((fruit, index) => (
-            <div key={index}>
-              <p>{fruit}</p>
-              <br></br>
-            </div>
-          ))
-        }
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
     </>
   )
 }
