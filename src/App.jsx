@@ -72,18 +72,20 @@ export default function App() {
             />
           </div>
           <header className="flex justify-between items-center self-stretch w-full px-[0.625rem]">
-            <div className="flex h-[1.875rem] justify-center items-end text-[var(--black,#000)] dark:text-[var(--gray200)] gap-[0.3125rem] sm:items-center sm:gap-[0.5625rem]">
+            <div className="flex h-[1.875rem] justify-center items-center text-[var(--black,#000)] dark:text-[var(--gray200)] gap-[0.3125rem] sm:gap-[0.5625rem]">
               <p className="text-[1.125rem] sm:text-[1.5rem] font-bold leading-normal select-none text-center [font-family:'Inter']">
                 GHK ☕
               </p>
-              <p className="text-[0.9375rem] sm:text-[1.25rem] font-normal leading-normal select-none [font-family:'Inter']">
-                | Made with
-              </p>
-              <LinkedImage href="https://react.dev" src={ReactIcon} alt="React logo" size="md" iconOnly ariaLabel="React" imgClassName="w-[1.5625rem] h-[1.5625rem] aspect-[1/1] sm:w-[1.875rem] sm:h-[1.875rem] flex-shrink-0" />
-              <p className="text-[0.9375rem] sm:text-[1.25rem] font-normal leading-normal select-none [font-family:'Inter']">
-                and
-              </p>
-              <LinkedImage href="https://vitejs.dev" src={ViteIcon} alt="Vite logo" size="md" iconOnly ariaLabel="Vite" imgClassName="w-[1.5625rem] h-[1.5625rem] aspect-[1/1] sm:w-[1.875rem] sm:h-[1.875rem] flex-shrink-0" />
+              <div className="hidden sm:inline-flex items-center gap-[0.3125rem] sm:gap-[0.5625rem]">
+                <p className="text-[0.9375rem] sm:text-[1.25rem] font-normal leading-normal select-none [font-family:'Inter']">
+                  | Made with
+                </p>
+                <LinkedImage href="https://react.dev" src={ReactIcon} alt="React logo" size="md" iconOnly ariaLabel="React" imgClassName="w-[1.5625rem] h-[1.5625rem] aspect-[1/1] sm:w-[1.875rem] sm:h-[1.875rem] flex-shrink-0" />
+                <p className="text-[0.9375rem] sm:text-[1.25rem] font-normal leading-normal select-none [font-family:'Inter']">
+                  and
+                </p>
+                <LinkedImage href="https://vitejs.dev" src={ViteIcon} alt="Vite logo" size="md" iconOnly ariaLabel="Vite" imgClassName="w-[1.5625rem] h-[1.5625rem] aspect-[1/1] sm:w-[1.875rem] sm:h-[1.875rem] flex-shrink-0" />
+              </div>
             </div>
             <div className="hidden lg:flex items-center gap-[4.375rem]">
               <SwitchToggle label="dark mode" />
@@ -154,9 +156,9 @@ export default function App() {
             </div>
           </main>
         </div>
-      <div className="absolute top-[54rem] sm:top-[62.12rem] flex justify-between items-center px-[3rem] md:px-[7.5rem] w-full h-[5.375rem] [background-image:var(--light-footer)] dark:[background-image:var(--dark-footer)]">
-        <p className='text-xs sm:text-sm text-gray-600 dark:text-[var(--gray400)] select-none'><strong>GHK</strong> 2025</p>
-        <p className='text-[10px] sm:text-xs text-gray-500 dark:text-[var(--bluegrey300)] select-none text-right'><strong>Gran Turismo</strong> is a registered trademark of <strong>Sony Interactive Entertainment Inc.</strong></p>
+      <div className="absolute top-[54rem] sm:top-[62.12rem] flex flex-col sm:flex-row justify-center sm:justify-between items-center px-[1.5rem] sm:px-[3rem] md:px-[7.5rem] gap-1 sm:gap-0 w-full h-[5.375rem] [background-image:var(--light-footer)] dark:[background-image:var(--dark-footer)]">
+        <p className='text-xs sm:text-sm text-gray-600 dark:text-[var(--gray400)] select-none text-center sm:text-left'><strong>GHK</strong> 2025</p>
+        <p className='text-[10px] sm:text-xs text-gray-500 dark:text-[var(--bluegrey300)] select-none text-center sm:text-right'><strong>Gran Turismo</strong> is a registered trademark of <strong>Sony Interactive Entertainment Inc.</strong></p>
       </div>
       <img
         src={Car}
