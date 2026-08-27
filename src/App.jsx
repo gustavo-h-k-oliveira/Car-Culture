@@ -131,8 +131,8 @@ export default function App() {
             <div className="flex flex-col justify-center items-center gap-[1.25rem] p-[0.625rem] mx-0 sm:flex-row sm:flex-wrap sm:justify-center sm:items-center sm:gap-[2rem] sm:mx-[5rem] sm:p-4 xl:py-[3.75rem] self-stretch relative z-20 bg-transparent sm:bg-white/50 sm:backdrop-blur-sm xl:bg-transparent xl:backdrop-blur-none rounded-lg 2xl:ml-0 2xl:flex-col xl:justify-end 2xl:items-end 2xl:flex-nowrap">
               <div className="flex flex-row 2xl:flex-col justify-center items-center gap-[2.5rem]">
                 <LinkedImage href="https://github.com/gustavo-h-k-oliveira" src={GitHub} darkSrc={GitHubDark} alt="GitHub logo" size="lg" iconOnly ariaLabel="GitHub" />
-                <LinkedImage href="https://instagram.com/gustavo.h.k.oliveira" src={Instagram} darkSrc={InstagramDark} alt="Instagram logo" size="lg" iconOnly ariaLabel="Instagram" />
-                <LinkedImage href="https://linkedin.com/in/gustavo-oliveira-713583214" src={LinkedIn} darkSrc={LinkedInDark} alt="LinkedIn logo" size="lg" iconOnly ariaLabel="LinkedIn" />
+                <LinkedImage href="https://www.instagram.com/gustavo.h.k.o/" src={Instagram} darkSrc={InstagramDark} alt="Instagram logo" size="lg" iconOnly ariaLabel="Instagram" />
+                <LinkedImage href="https://www.linkedin.com/in/gustavo-h-k-oliveira/" src={LinkedIn} darkSrc={LinkedInDark} alt="LinkedIn logo" size="lg" iconOnly ariaLabel="LinkedIn" />
               </div>
               <p className="text-[var(--red300,#E57373)] text-center xl:text-right [font-family:'Instrument Sans'] text-[1.5625rem] font-bold leading-tight select-none">2016 Ford GT<br /><span className='text-[1.3rem] font-normal'>24h Le Mans</span></p>
             </div>
